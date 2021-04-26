@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body {
+     color: hsl(229, 23%, 23%);
+     font-family: 'Kumbh Sans', sans-serif;
+     font-size: 18px;
+     background: hsl(185, 75%, 39%);
+     overflow: hidden;
+     height: 100vh;
+     width: 100%;
+}
+
+.top, .bottom {
+     position: absolute;
+}
+
+.top {
+     transform: translate(-35%, -55%);
+}
+
+.bottom {
+     bottom: 0;
+     right: 0;
+     transform: translate(40%, 65%);
+}
+
+@media screen and (max-width: 706px) {
+    .top {
+         transform: translate(-70%, -55%);
+    } 
+    .bottom {
+         transform: translate(70%, 50%);
+    }
+}
+
+@media screen and (max-height: 700px) {
+     .bottom {
+          transform: translate(70%, 75%);
+     }
+}
+.main { 
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.container {
+     background: hsl(0, 0%, 100%);
+     text-align: center;
+     max-width: 375px;
+     border-radius: 15px;
+     overflow: hidden;
+     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.initial-container {
+     height: 175px;
+     width: 375px;
+     background: url(./images/bg-pattern-card.svg);
+     background-size: cover;
+}
+
+.img-vic {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     overflow: hidden;
+     margin: -50px auto -30px auto;
+     border: 5px solid hsl(0, 0%, 100%);
+}
+
+img-vic img {
+     display: block;
+     width: 100%;
+     height: auto;
+}
+
+.card {
+     margin-top: 54px;
+     margin-bottom: -75px;
+     height: 275px;
+     line-height: 1.8rem;
+}
+
+.card .name {
+     font-size: 1.4rem;
+}
+
+.card .city {
+     margin-top: 10px;
+}
+
+.card .age, .card .city {
+     font-weight: 300;
+     font-size: 1.1rem;
+     color: hsl(0, 0%, 59%);
+}
+
+.acts .act {
+     display: block;
+     font-weight: 300;
+     font-size: 0.9rem;
+     color: hsl(0, 0%, 59%);
+     letter-spacing: 0.1rem;
+}
+
+.acts {
+     padding-top: 22px;
+     padding-right: 40px;
+     padding-left: 40px;
+     border-top: 1px solid hsl(0, 10%, 88%);
+     margin-top: 23px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+}
+
+.attribution {
+     margin-top: 47rem;
+}
